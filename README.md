@@ -42,7 +42,23 @@ Put either:<br>
 * imageError - raise error when this image is found in screen while waiting for the image needed
 * timeout - if the seconds specified passes without the image needed to appear then raise error
 
+<br>
+These parameters are available for the bellow functions too:
+<br>
+```
+rightClick
+doubleClick
+hover
+dragTo
+write (text, +the parameters specified up)
 
+```
+
+
+scrollUp
+scrollDown
+scrollLeft
+scrollRight
 
 
 
