@@ -62,6 +62,13 @@ Where:
 
 * text - the string to write on the center of the image or the coordinates specified
 
+<br>
+
+```
+robo.press(keys) # Ex: robo.press("ctrl, c")
+```
+* keys - the hotkeys you want to press  
+
 
 scrollUp
 scrollDown
