@@ -8,3 +8,9 @@ Build on top of pyautogui but with some extra features: <br>
     -setup, <br>
     -aproximate match of images, <br>
     -can be oriented to a screen coordonate automation or screen images automation
+
+```
+from pyrobogui import Robo
+
+robo = Robo()
+```
