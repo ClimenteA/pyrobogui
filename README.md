@@ -51,6 +51,11 @@ These parameters are available for the bellow functions too:
 * hover
 * dragTo
 
+
+```
+robo.scrollUp(320)
+```
+
 <br>
 Instert a number for the functions bellow (scroll is noticeable for values over 120)
 
