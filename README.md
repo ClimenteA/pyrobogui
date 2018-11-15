@@ -32,12 +32,16 @@ Put either:
 
 * image - path to image (.png recomended)
 
-<br>or<br>
+or
+
+<br>
 
 * x - coodonate number
 * y - coordonate number
 
-<br>Additionally you have:<br>
+
+Additionally you have:
+<br>
 
 * offsetUp - make action up from the center specified
 * offsetDown - make action down from the center specified
@@ -46,7 +50,7 @@ Put either:
 * imageError - raise error when this image is found in screen while waiting for the image needed
 * timeout - if the seconds specified passes without the image needed to appear then raise error
 
-<br>
+
 These parameters are available for the bellow functions too:
 <br>
 
