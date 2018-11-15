@@ -24,7 +24,7 @@ robo.click(image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLef
 ```
 Put either:<br>
 * image - path to image (.png recomended)
-or<br>
+<br>or<br>
 * x - coodonate number
 * y - coordonate number
 Additionally you have:<br>
