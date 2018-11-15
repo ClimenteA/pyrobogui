@@ -111,6 +111,12 @@ robo.getImageLocation(image, full_match=False)
 * image - image you need to find on screen
 * full_match - by default if will reduce the match if not found on screen down to 70%. If you set it to True it will try to find on screen an identical match size, colors etc.
 
+```
+robo.waitColorToAppear(xyrgb, imageError=None, timeout=1800) #ex:robo.waitColorToAppear("100, 200, 255, 255, 255") 
+```
+* xyrgb - a string like this "100, 200, 255, 255, 255"
+* imageError - if this image apprears on screen the function will stop
+* timeout - wait for the image to appear a specific number of seconds if that seconds pass then raise error
 
 
 
