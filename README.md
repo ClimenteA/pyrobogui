@@ -20,12 +20,15 @@ robo = Robo() #create new object
 ### Mouse functions 
 
 <br>
+
 ```
 robo.click(image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800)
 ```
-Describing the parameters:<br>
-
-Put either:<br>
+<br>
+Describing the parameters:
+<br>
+Put either:
+<br>
 
 * image - path to image (.png recomended)
 
