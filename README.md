@@ -12,7 +12,7 @@ Build on top of pyautogui but with some extra features: <br>
 Usage:<br>
 
 ```
-from pyrobogui import Robo
+from pyrobogui import Robo #import class Robo
 
-robo = Robo()
+robo = Robo() #create new object
 ```
