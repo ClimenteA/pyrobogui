@@ -45,14 +45,19 @@ Put either:<br>
 <br>
 These parameters are available for the bellow functions too:
 <br>
-```
-rightClick
-doubleClick
-hover
-dragTo
-write (text, +the parameters specified up)
+
+* rightClick
+* doubleClick
+* hover
+* dragTo
+
+<br>
 
 ```
+robo.write (text, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800)
+
+```
+
 
 
 scrollUp
