@@ -18,7 +18,8 @@ robo = Robo() #create new object
 ```
 Functions you can use:
 
-#Click functions 
+### Mouse functions 
+
 <br>
 ```
 robo.click(image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800)
@@ -67,6 +68,7 @@ Instert a number for the functions bellow (scroll is noticeable for values over 
 
 <br>
 
+### Keyboard functions
 
 ```
 robo.write (text, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800)
