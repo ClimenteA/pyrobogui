@@ -16,7 +16,6 @@ from pyrobogui import Robo #import class Robo
 
 robo = Robo() #create new object
 ```
-Functions you can use:
 
 ### Mouse functions 
 
