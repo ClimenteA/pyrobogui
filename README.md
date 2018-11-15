@@ -160,7 +160,9 @@ robo.waitImageToDisappear(image, imageError=None, timeout=1800, full_match=False
 
 full_match - not on all PC's the rgb colors, image size are the same, they may vary a little; that's way full_match is False by default
 
+<br>
 
+### If you want to see more read the source code of this module it's just one file ;)
 
 
 
