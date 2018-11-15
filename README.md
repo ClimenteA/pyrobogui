@@ -24,10 +24,12 @@ robo.click(image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLef
 ```
 Put either:<br>
 * image - path to image (.png recomended)
-<br>or<br>
+<br><br>or<br><br>
 * x - coodonate number
 * y - coordonate number
-Additionally you have:<br>
+
+<br><br>Additionally you have:<br><br>
+
 * offsetUp - make action up from the center specified
 * offsetDown - make action down from the center specified
 * offsetLeft - make action down from the center specified
