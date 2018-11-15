@@ -52,6 +52,15 @@ These parameters are available for the bellow functions too:
 * dragTo
 
 <br>
+Instert a number for the functions bellow (scroll is noticeable for values over 120)
+
+* scrollUp
+* scrollDown
+* scrollLeft
+* scrollRight
+
+<br>
+
 
 ```
 robo.write (text, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800)
@@ -67,13 +76,14 @@ Where:
 ```
 robo.press(keys) # Ex: robo.press("ctrl, c")
 ```
-* keys - the hotkeys you want to press  
+* keys - the hotkeys you want to press, you can press max 3 keys (ex: robo.press("ctrl, alt, delete"))  
+
+<br>
 
 
-scrollUp
-scrollDown
-scrollLeft
-scrollRight
+
+
+
 
 
 
