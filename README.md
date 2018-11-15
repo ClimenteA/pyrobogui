@@ -90,6 +90,14 @@ robo.press(keys) # Ex: robo.press("ctrl, c")
 
 <br>
 
+### Wait functions
+
+Start setup to get the x,y coordinates and RGB color from the screen
+Useful when you want to start an automation process based on x,y coodinates(xy positions must be the same each time the process runs!)
+```
+robo.setup()
+```
+
 
 
 
