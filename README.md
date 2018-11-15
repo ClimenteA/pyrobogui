@@ -56,7 +56,10 @@ These parameters are available for the bellow functions too:
 ```
 robo.write (text, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800)
 ```
-
+<br>
+Where:
+<br>
+* text - the string to write on the center of the image or the coordinates specified
 
 
 scrollUp
