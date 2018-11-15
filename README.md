@@ -7,7 +7,7 @@ Build on top of pyautogui but with some extra features: <br>
     -timeouts, <br>
     -setup, <br>
     -aproximate match of images, <br>
-    -can be oriented to a screen coordonate automation or screen images automation
+    -can be oriented to a screen coordonate automation or screen images automation or both
 
 Usage:<br>
 
@@ -55,6 +55,7 @@ These parameters are available for the bellow functions too:
 * hover
 * dragTo
 
+Scroll functions
 
 ```
 robo.scrollUp(320)
@@ -83,10 +84,14 @@ Where:
 
 <br>
 
+For a list of key names you can press check pyautogui documentation
+
 ```
 robo.press(keys) # Ex: robo.press("ctrl, c")
 ```
 * keys - the hotkeys you want to press, you can press max 3 keys (ex: robo.press("ctrl, alt, delete"))  
+
+
 
 <br>
 
