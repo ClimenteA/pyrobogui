@@ -59,6 +59,7 @@ robo.write (text, image=None, x=None, y=None, offsetUp=None, offsetDown=None, of
 <br>
 Where:
 <br>
+
 * text - the string to write on the center of the image or the coordinates specified
 
 
