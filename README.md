@@ -121,11 +121,17 @@ robo.waitColorToDisappear(xyrgb, imageError=None, timeout=1800)
 * imageError - if this image apprears on screen the function will stop
 * timeout - wait for the image to appear a specific number of seconds if that seconds pass then raise error
 
-
 ```
 robo.waitImageToAppear(image, imageError=None, timeout=1800, full_match=False)
 robo.waitImageToDisappear(image, imageError=None, timeout=1800, full_match=False)
 ```
+* image - image you need on screen
+* imageError - stop if this image is found
+* timeout - stop if takes too long time
+* full_match - by default if will aproximate the image on screen by 70% if you change it to True it will match it 100%
+
+full_match - not on all PC's the rgb colors, image size are the same, they may vary a little; that's way full_match is False by default
+
 
 
 
