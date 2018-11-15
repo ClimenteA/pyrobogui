@@ -28,14 +28,30 @@ Put either:<br>
 
 * image - path to image (.png recomended)
 
-<br><br>or<br>
+<br>or<br>
 
 * x - coodonate number
 * y - coordonate number
 
-<br><br>Additionally you have:<br>
+<br>Additionally you have:<br>
 
 * offsetUp - make action up from the center specified
 * offsetDown - make action down from the center specified
 * offsetLeft - make action down from the center specified
 * offsetRight - make action down from the center specified
+* imageError - raise error when this image is found in screen while waiting for the image needed
+* timeout - if the seconds specified passes without the image needed to appear then raise error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
