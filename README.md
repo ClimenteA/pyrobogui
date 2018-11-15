@@ -111,6 +111,29 @@ robo.getImageLocation(image, full_match=False)
 * image - image you need to find on screen
 * full_match - by default if will reduce the match if not found on screen down to 70%. If you set it to True it will try to find on screen an identical match size, colors etc.
 
+<br>
+Get to coordonates for the images needed.
+<br>
+You can count images of the same type on the screen from UP to DOWN, and LEFT to RIGHT.
+
+```
+robo.imageNeddle(image, imageNr='last') 
+```
+Useful for casses where you have images that look the same on the screen but they are positioned in different places.
+<br>
+
+For example let's say the you have a form with a lot of radio buttons and you want to click on the 5th radio button, you will do:
+
+```
+robo.imageNeddle("./img/radio_button.png", 5)
+```
+Also you the options for imageNr parameter:
+* imageNr=5 - returns the specified counted image 
+* imageNr='last'
+* imageNr='first'
+* imageNr='all' - returns a list of image locations
+
+
 ### Wait functions
 
 ```
