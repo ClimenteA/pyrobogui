@@ -34,14 +34,11 @@ Put either:
 
 or
 
-<br>
-
 * x - coodonate number
 * y - coordonate number
 
 
 Additionally you have:
-<br>
 
 * offsetUp - make action up from the center specified
 * offsetDown - make action down from the center specified
@@ -52,7 +49,6 @@ Additionally you have:
 
 
 These parameters are available for the bellow functions too:
-<br>
 
 * rightClick
 * doubleClick
