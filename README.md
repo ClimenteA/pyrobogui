@@ -22,13 +22,18 @@ Functions you can use:
 ```
 robo.click(image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800)
 ```
+Describing the parameters:<br>
+
 Put either:<br>
+
 * image - path to image (.png recomended)
-<br><br>or<br><br>
+
+<br><br>or<br>
+
 * x - coodonate number
 * y - coordonate number
 
-<br><br>Additionally you have:<br><br>
+<br><br>Additionally you have:<br>
 
 * offsetUp - make action up from the center specified
 * offsetDown - make action down from the center specified
