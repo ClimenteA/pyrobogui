@@ -90,13 +90,27 @@ robo.press(keys) # Ex: robo.press("ctrl, c")
 
 <br>
 
-### Wait functions
+### Additional functions
 
 Start setup to get the x,y coordinates and RGB color from the screen
 Useful when you want to start an automation process based on x,y coodinates(xy positions must be the same each time the process runs!)
 ```
 robo.setup()
 ```
+Wait a number of seconds equivalent to > time.sleep(x) 
+
+```
+robo.waitSeconds(5) #wait 5 seconds
+```
+
+Get coordinates of the image:
+
+```
+robo.getImageLocation(image, full_match=False)
+```
+* image - image you need to find on screen
+* full_match - by default if will reduce the match if not found on screen down to 70%. If you set it to True it will try to find on screen an identical match size, colors etc.
+
 
 
 
