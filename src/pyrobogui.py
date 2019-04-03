@@ -13,6 +13,7 @@ class Robo:
     -aproximate match of images, 
     -can be oriented to a screen coordonate automation or screen images automation """
 
+
     def listifyString(self, astring, delimiter=','):
         """Get a list from a string"""
         strListifyed = astring.split(delimiter)
@@ -124,12 +125,11 @@ class Robo:
         return filteredList
 
 
-
-    def click(self, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800):
+    def click(self, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=30, full_match=False):
         """Clicks by default the center of the image if no offsets are given. 
         Optionally you can set image to greyscale or just insert the x, y coordinates"""
         if image != None:    
-            location = self.waitImageToAppear(image, imageError, timeout)    
+            location = self.waitImageToAppear(image, imageError, timeout, full_match)    
             x, y = pag.center(location)
             x, y = self.offset(x, y, offsetUp, offsetDown, offsetLeft, offsetRight)
             pag.click(x, y)
@@ -143,10 +143,10 @@ class Robo:
     # In[5]:
 
 
-    def rightClick(self, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800):
+    def rightClick(self, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=30, full_match=False):
         """Same as click func"""
         if image != None:    
-            location = self.waitImageToAppear(image, imageError, timeout)    
+            location = self.waitImageToAppear(image, imageError, timeout, full_match)    
             x, y = pag.center(location)
             x, y = self.offset(x, y, offsetUp, offsetDown, offsetLeft, offsetRight)
             pag.rightClick(x, y)
@@ -160,10 +160,10 @@ class Robo:
     # In[6]:
 
 
-    def doubleClick(self, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800):
+    def doubleClick(self, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=30, full_match=False):
         """Same as click func"""
         if image != None:   
-            location = self.waitImageToAppear(image, imageError, timeout)     
+            location = self.waitImageToAppear(image, imageError, timeout, full_match)     
             x, y = pag.center(location)
             x, y = self.offset(x, y, offsetUp, offsetDown, offsetLeft, offsetRight)
             pag.doubleClick(x, y)
@@ -177,10 +177,10 @@ class Robo:
     # In[7]:
 
 
-    def hover(self, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800):
+    def hover(self, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=30, full_match=False):
         """Same as click func"""
         if image != None:    
-            location = self.waitImageToAppear(image, imageError, timeout)    
+            location = self.waitImageToAppear(image, imageError, timeout, full_match)    
             x, y = pag.center(location)
             x, y = self.offset(x, y, offsetUp, offsetDown, offsetLeft, offsetRight)
             pag.moveTo(x, y)
@@ -194,10 +194,10 @@ class Robo:
     # In[8]:
 
 
-    def dragTo(self, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800):
+    def dragTo(self, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=30, full_match=False):
         """Same as click func"""
         if image != None:   
-            location = self.waitImageToAppear(image, imageError, timeout)     
+            location = self.waitImageToAppear(image, imageError, timeout, full_match)     
             x, y = pag.center(location)
             x, y = self.offset(x, y, offsetUp, offsetDown, offsetLeft, offsetRight)
             pag.dragTo(x, y)
@@ -274,13 +274,13 @@ class Robo:
     # In[15]:
 
 
-    def write(self, text, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800):
+    def write(self, text, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=30, full_match=False):
         """Type some text. Optionally in the given coordinates or image"""
         if (x == None and y == None) and (image == None):
             pag.typewrite(str(text))
             return text
         else:
-            self.click(image, x, y, offsetUp, offsetDown, offsetLeft, offsetRight, imageError, timeout)
+            self.click(image, x, y, offsetUp, offsetDown, offsetLeft, offsetRight, imageError, timeout, full_match)
             self.press("ctrl, a")
             self.press("backspace")
             pag.typewrite(str(text))
@@ -326,7 +326,7 @@ class Robo:
                                 return location
                         
                 
-    def waitColorToAppear(self, xyrgb, imageError=None, timeout=1800):
+    def waitColorToAppear(self, xyrgb, imageError=None, timeout=30, full_match=False):
         """Wait for RGB color to appear in the specified x,y coordinates"""
         if timeout == None:
             timeout = 1800
@@ -362,7 +362,7 @@ class Robo:
 
 
 
-    def waitColorToDisappear(self, xyrgb, imageError=None, timeout=1800):
+    def waitColorToDisappear(self, xyrgb, imageError=None, timeout=30, full_match=False):
         """Wait for RGB color to dissapear in the specified x,y coordinates"""
         if timeout == None:
             timeout = 1800
@@ -400,10 +400,10 @@ class Robo:
 
 
 
-    def waitImageToAppear(self, image, imageError=None, timeout=1800, full_match=False):
+    def waitImageToAppear(self, image, imageError=None, timeout=30, full_match=False):
         """Wait for image to appear"""
         if timeout == None:
-            timeout = 1800
+            timeout=30
         else:
             try:
                 timeout = int(float(timeout))
@@ -430,7 +430,7 @@ class Robo:
         
 
 
-    def waitImageToDisappear(self, image, imageError=None, timeout=1800, full_match=False):
+    def waitImageToDisappear(self, image, imageError=None, timeout=30, full_match=False, full_match=False):
         """Wait for image to disappear from the screen"""
         if timeout == None:
             timeout = 1800
@@ -517,3 +517,6 @@ class Robo:
 
 
 
+# Initialize class
+
+robo = Robo()
