@@ -12,6 +12,13 @@ Build on top of pyautogui but with some extra features: <br>
 Usage:<br>
 
 ```
+pip install pyautogui
+pip install pyperclip
+pip install opencv-python
+pip install numpy
+
+#then
+
 from pyrobogui import robo 
 ```
 
