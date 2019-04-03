@@ -430,7 +430,7 @@ class Robo:
         
 
 
-    def waitImageToDisappear(self, image, imageError=None, timeout=30, full_match=False, full_match=False):
+    def waitImageToDisappear(self, image, imageError=None, timeout=30, full_match=False):
         """Wait for image to disappear from the screen"""
         if timeout == None:
             timeout = 1800
