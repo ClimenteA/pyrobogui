@@ -12,9 +12,7 @@ Build on top of pyautogui but with some extra features: <br>
 Usage:<br>
 
 ```
-from pyrobogui import Robo #import class Robo
-
-robo = Robo() #create new object
+from pyrobogui import robo 
 ```
 
 ### Mouse functions 
@@ -22,7 +20,7 @@ robo = Robo() #create new object
 <br>
 
 ```
-robo.click(image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800)
+robo.click(image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800, full_match=False)
 ```
 <br>
 Describing the parameters:
@@ -74,7 +72,7 @@ Instert a number for the functions bellow (scroll is noticeable for values over 
 ### Keyboard functions
 
 ```
-robo.write (text, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800)
+robo.write (text, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800,full_match=False)
 ```
 <br>
 Where:
