@@ -11,7 +11,7 @@ with open("README.md", "r") as fh:
 
 setup (
 	name="pyrobogui",
-	version="0.0.2",
+	version="0.0.5",
 	description="Wrapper around pyautogui for automating mouse and keyboard - plus some new functions",
 	url="https://github.com/ClimenteA/pyrobogui",
 	author="Climente Alin",
