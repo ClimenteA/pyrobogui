@@ -16,6 +16,7 @@ pip install pyautogui
 pip install pyperclip
 pip install opencv-python
 pip install numpy
+pip install pyrobogui
 
 #then
 
