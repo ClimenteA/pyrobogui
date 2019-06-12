@@ -1,8 +1,6 @@
 # pyrobogui
 Wrapper around pyautogui - plus some new functions
 
-Main dependencies: pyautogui, pyperclip, opencv-python, numpy
-
 Build on top of pyautogui but with some extra features: <br>
     -timeouts, <br>
     -setup, <br>
@@ -11,24 +9,36 @@ Build on top of pyautogui but with some extra features: <br>
 
 Usage:<br>
 
+### Installation
 ```
-pip install pyautogui
-pip install pyperclip
-pip install opencv-python
-pip install numpy
 pip install pyrobogui
-
-#then
-
-from pyrobogui import robo 
+ 
 ```
+
+### Usage
+
+```
+from pyrobogui import robo
+
+# use the robo.method() to do what you need 
+```
+
 
 ### Mouse functions 
 
 <br>
 
 ```
-robo.click(image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800, full_match=False)
+robo.click(image=None, 
+        x=None, 
+        y=None, 
+        offsetUp=None, 
+        offsetDown=None, 
+        offsetLeft=None, 
+        offsetRight=None, 
+        imageError=None, 
+        timeout=1800, 
+        full_match=False)
 ```
 <br>
 Describing the parameters:
@@ -36,7 +46,7 @@ Describing the parameters:
 Put either:
 <br>
 
-* image - path to image (.png recomended)
+* image - path to image
 
 or
 
@@ -68,7 +78,7 @@ robo.scrollUp(320)
 ```
 
 <br>
-Instert a number for the functions bellow (scroll is noticeable for values over 120)
+Insert a number for the functions bellow (scroll is noticeable for values over 120)
 
 * scrollUp
 * scrollDown
@@ -80,7 +90,17 @@ Instert a number for the functions bellow (scroll is noticeable for values over 
 ### Keyboard functions
 
 ```
-robo.write (text, image=None, x=None, y=None, offsetUp=None, offsetDown=None, offsetLeft=None, offsetRight=None, imageError=None, timeout=1800,full_match=False)
+robo.write (text, 
+            image=None, 
+            x=None, 
+            y=None, 
+            offsetUp=None, 
+            offsetDown=None, 
+            offsetLeft=None, 
+            offsetRight=None, 
+            imageError=None, 
+            timeout=1800,
+            full_match=False)
 ```
 <br>
 Where:
@@ -96,8 +116,6 @@ For a list of key names you can press check pyautogui documentation
 robo.press(keys) # Ex: robo.press("ctrl, c")
 ```
 * keys - the hotkeys you want to press, you can press max 3 keys (ex: robo.press("ctrl, alt, delete"))  
-
-
 
 <br>
 
@@ -165,15 +183,6 @@ robo.waitImageToDisappear(image, imageError=None, timeout=1800, full_match=False
 * full_match - by default if will aproximate the image on screen by 70% if you change it to True it will match it 100%
 
 full_match - not on all PC's the rgb colors, image size are the same, they may vary a little; that's way full_match is False by default
-
-<br>
-
-### If you want to see more read the source code of this module it's just one file ;)
-
-
-
-
-
 
 
 
