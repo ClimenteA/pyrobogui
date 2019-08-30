@@ -1,4 +1,4 @@
-# pyrobogui
+# pyrobogui [![Downloads](https://pepy.tech/badge/pyrobogui)](https://pepy.tech/project/pyrobogui)
 Wrapper around pyautogui - plus some new functions
 
 Build on top of pyautogui but with some extra features: 
