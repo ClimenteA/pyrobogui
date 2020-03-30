@@ -18,9 +18,10 @@ pip install pyrobogui
 ### Usage
 
 ```
-from pyrobogui import robo
+from pyrobogui import robo, pag
 
 # use the robo.method() to do what you need 
+# pag - is the pyautogui instance, if you need more barebones features
 ```
 
 
