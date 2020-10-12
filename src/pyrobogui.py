@@ -1,7 +1,12 @@
 import time
 from datetime import datetime, timedelta
-import cv2
-import numpy as np
+
+try:
+    import cv2
+    import numpy as np
+except:
+    # opencv-python not installed
+
 import pyautogui as pag
 import pyperclip as clip
 

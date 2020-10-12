@@ -11,7 +11,7 @@ with open("README.md", "r") as fh:
 
 setup (
 	name="pyrobogui",
-	version="0.0.6",
+	version="0.0.7",
 	description="Wrapper around pyautogui for automating mouse and keyboard - plus some new functions",
 	url="https://github.com/ClimenteA/pyrobogui",
 	author="Climente Alin",
@@ -20,9 +20,7 @@ setup (
 	py_modules=["pyrobogui"],
 	install_requires=[
           'pyautogui',
-		  'opencv-python',
-		  'numpy',
-		  'pyperclip',
+		  'pyperclip'
 	],
 	packages=find_packages(),
 	long_description=long_description,
