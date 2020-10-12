@@ -4,7 +4,7 @@ Wrapper around pyautogui - plus some new functions
 Build on top of pyautogui but with some extra features: 
 * timeouts, 
 * setup, 
-* aproximate match of images, 
+* aproximate match of images (install manually opencv and numpy if you need this feature), 
 * can be oriented to a screen coordonate automation or screen images automation or both
 
 Usage:<br>
@@ -14,6 +14,11 @@ Usage:<br>
 pip install pyrobogui
  
 ```
+
+If you are using MAC or Linux checkout pyautogui documentation on how to install tkinter.
+
+[Automate the boring stuff book](https://automatetheboringstuff.com/chapter18/)
+
 
 ### Usage
 
