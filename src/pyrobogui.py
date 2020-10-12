@@ -5,10 +5,13 @@ try:
     import cv2
     import numpy as np
 except:
-    # opencv-python not installed
+    print("For aproximate match of images please install opencv-python and numpy")
 
-import pyautogui as pag
-import pyperclip as clip
+try:
+    import pyautogui as pag
+    import pyperclip as clip
+except:
+    raise Exception("Checkout pyautogui documentation on how to install tkinker!(Mac/Linux)")
 
 
 class Robo:
